@@ -1,0 +1,23 @@
+/* imports */
+@import url("./layout.css");
+@import url("./font.css");
+@import url("./homepage.css");
+
+/* css */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "proxima_nova_rgregular", Helvetica, Arial, sans-serif;
+}
+
+/* common classes */
+
+/* font_proximanova_regular */
+.font_proximanova_regular {
+  font-family: "proxima_nova_rgregular", Helvetica, Arial, sans-serif;
+}
+
+/* font_proximanova_bold */
+.font_proximanova_bold {
+  font-family: "proxima_nova_rgbold", Helvetica, Arial, sans-serif;
+}

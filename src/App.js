@@ -1,25 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import Routes from "./routes";
+import { GlobalProvider } from "./context/globalContext/globalContext";
+// css
+import "./styles/index.css";
+// carousel css
+import "react-multi-carousel/lib/styles.css";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <GlobalProvider>
+      <Routes />
+    </GlobalProvider>
   );
-}
+};
 
 export default App;
